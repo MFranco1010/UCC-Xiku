@@ -1,7 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+body {
+    background-color: darkcyan;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.233);
+}
+
 .nav{
     display: flex;
     justify-content: center;
     background-color: aquamarine;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.233);
+    height: 13vh;
+    margin-bottom: 20px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.233);
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.img {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.233);
+    padding: 20px;
+}
+
+.mincont {
+    display: flex;
+    margin: 10px;
+    align-content: center;
+}
+
+p{
+    background-color: aqua;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.233);
+    font-family: 'Fugaz One', cursive;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-family: 'Fugaz One', cursive;
+}
+
+
+.li {
+    padding: 5px;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.li.fast::before {
+    background-image: url('/img/fast.png');
+    background-size: cover;
+}
+
+.li.coin::before {
+    background-image: url('/img/coin.png');
+    background-size: cover;
+}
+
+.li.int::before {
+    background-image: url('/img/int.png');
+    background-size: cover;
 }
